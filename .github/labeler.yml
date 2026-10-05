@@ -1,0 +1,28 @@
+core:
+  - all:
+      - changed-files:
+          - any-glob-to-any-file: "lua/monoknight/**"
+          - all-globs-to-all-files:
+              - "!lua/monoknight/groups/**"
+              - "!lua/monoknight/colors/**"
+              - "!lua/monoknight/extra/**"
+
+extras:
+  - changed-files:
+      - any-glob-to-any-file: "lua/monoknight/extra/**"
+
+groups:
+  - changed-files:
+      - any-glob-to-any-file: "lua/monoknight/groups/**"
+
+base:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "lua/monoknight/groups/base.lua"
+          - "lua/monoknight/groups/kinds.lua"
+          - "lua/monoknight/groups/treesitter.lua"
+          - "lua/monoknight/groups/semantic_tokens.lua"
+
+colors:
+  - changed-files:
+      - any-glob-to-any-file: "lua/monoknight/colors/**"

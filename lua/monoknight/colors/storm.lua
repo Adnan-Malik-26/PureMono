@@ -1,0 +1,41 @@
+local palette = require("monoknight.colors.palette")
+
+---@class Palette
+local ret = {
+  bg = palette.black,
+  bg_dark = palette.true_black,
+  bg_dark1 = palette.true_black,
+  bg_highlight = palette.charcoal,
+  blue = palette.blue,
+  blue0 = palette.light_blue,
+  blue1 = palette.dark_blue,
+  blue2 = palette.sky,
+  blue5 = palette.navy,
+  blue6 = palette.light_purple,
+  blue7 = palette.steel,
+  comment = palette.ash,
+  cyan = palette.cyan,
+  dark3 = palette.graphite,
+  dark5 = palette.slate,
+  fg = palette.white,
+  fg_dark = palette.smoke,
+  fg_gutter = palette.dark_purple,
+  green = palette.green,
+  green1 = palette.dark_green,
+  green2 = palette.sage,
+  magenta = palette.magenta,
+  magenta2 = palette.soft_magenta,
+  orange = palette.coral,
+  purple = palette.purple,
+  red = palette.red,
+  red1 = palette.light_red,
+  teal = palette.teal,
+  terminal_black = palette.graphite,
+  yellow = palette.yellow,
+  git = {
+    add = palette.green,
+    change = palette.yellow,
+    delete = palette.red,
+  },
+}
+return ret
